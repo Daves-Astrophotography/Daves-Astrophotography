@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Coming Soon</title>
+    <title>Dave's Astrophotography</title>
     <style>
         body {
             margin: 0;
@@ -52,8 +52,11 @@
         .social {
             margin-top: 20px;
         }
+        .social table {
+            margin: 0 auto;
+            border-spacing: 10px;
+        }
         .social a {
-            margin: 0 10px;
             padding: 10px 15px;
             font-size: 1.2rem;
             color: white;
@@ -61,10 +64,16 @@
             border-radius: 5px;
             text-decoration: none;
             transition: background 0.3s;
-            display: inline-block;
+            display: flex;
+            align-items: center;
+            gap: 10px;
         }
         .social a:hover {
             background: rgba(255, 255, 255, 0.4);
+        }
+        .social img {
+            width: 24px;
+            height: 24px;
         }
     </style>
 </head>
@@ -74,10 +83,20 @@
         <p>Our website is under construction. Stay tuned for something amazing!</p>
         <a class="email" href="mailto:info@example.com">Contact Us</a>
         <div class="social">
-            <a href="https://www.youtube.com/@DavesAstrophotography" target="_blank">YouTube: Dave's Astrophotography</a>
-            <a href="https://x.com/daveauld" target="_blank">X: Dave Auld/X</a>
-            <a href="https://www.instagram.com/dave_auld/" target="_blank">Instagram: Dave Auld</a>
-            <a href="https://www.facebook.com/daves.astrophotography" target="_blank">Facebook: Dave's Astrophotography</a>
+            <table>
+                <tr>
+                    <td><a href="https://www.youtube.com/@DavesAstrophotography" target="_blank"><img src="https://upload.wikimedia.org/wikipedia/commons/4/42/YouTube_icon_%282013-2017%29.png" alt="YouTube">YouTube</a></td>
+                </tr>
+                <tr>
+                    <td><a href="https://x.com/daveauld" target="_blank"><img src="https://upload.wikimedia.org/wikipedia/en/6/60/Twitter_Logo_as_of_2021.svg" alt="Twitter/X">Twitter/X</a></td>
+                </tr>
+                <tr>
+                    <td><a href="https://www.instagram.com/dave_auld/" target="_blank"><img src="https://upload.wikimedia.org/wikipedia/commons/a/a5/Instagram_icon.png" alt="Instagram">Instagram</a></td>
+                </tr>
+                <tr>
+                    <td><a href="https://www.facebook.com/daves.astrophotography" target="_blank"><img src="https://upload.wikimedia.org/wikipedia/commons/5/51/Facebook_f_logo_%282019%29.svg" alt="Facebook">Facebook</a></td>
+                </tr>
+            </table>
         </div>
     </div>
 </body>
